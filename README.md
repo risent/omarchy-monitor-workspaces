@@ -23,8 +23,12 @@ globally focused workspace across every display.
 omarchy plugin add https://github.com/risent/omarchy-monitor-workspaces.git --enable
 ```
 
-The plugin declares itself as a replacement for `omarchy.workspaces`. When
-prompted, place it in the left section of the bar.
+`--enable` adds the widget to the bar and turns it on. `omarchy.workspaces`
+then steps aside automatically, since both widgets occupy the same slot, and
+its settings stay in `shell.json` while it is disabled.
+
+The plugin declares itself as a clone of `omarchy.workspaces`. When prompted,
+place it in the left section of the bar.
 
 ## Requirements and dependencies
 
